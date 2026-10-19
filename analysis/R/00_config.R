@@ -30,7 +30,7 @@ cfg <- list(
   # kow_double_log = TRUE reproduces the weighting of the original
   # submission draft, in which these values were log10-transformed a
   # second time (weights proportional to log10(log10 Kow)).
-  kow_double_log = FALSE,
+  kow_double_log = getOption("smma.kow_double_log", FALSE),
 
   # Attribution summaries
   ci_B = 2000, ci_seed = 42

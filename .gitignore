@@ -6,3 +6,5 @@ analysis/data/ancillary/
 *.Rcheck/
 smma_*.tar.gz
 inst/doc
+/doc/
+/Meta/

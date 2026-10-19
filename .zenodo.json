@@ -1,0 +1,22 @@
+{
+  "title": "smma: Source Mixture Matching Analysis for receptor-model factors",
+  "upload_type": "software",
+  "description": "<p>smma is an R package for interpreting receptor-model factors (for example from EPA PMF 5.0) with an external library of measured source profiles. Each factor profile is fitted as a non-negative mixture of library sources by weighted non-negative least squares; analyte bootstrap resampling gives fit-quality-weighted uncertainty, and the source weights are propagated back to samples for any grouping of analytes. The package also provides profile-distance metrics, PAC diagnostic ratios and alkylation indices, library sensitivity tools, distance-based site classification and spatial distance-decay regressions.</p><p>The repository includes scripts and data that reproduce the source apportionment of polycyclic aromatic compounds and petroleum biomarkers in British Columbia intertidal sediments (Pelletier et al., submitted to Environmental Pollution).</p>",
+  "creators": [
+    {
+      "name": "Pelletier, Nicolas",
+      "affiliation": "Environment and Climate Change Canada, Emergency Science and Technology Section"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "receptor modelling",
+    "PMF",
+    "source apportionment",
+    "PAH",
+    "oil spill",
+    "NNLS"
+  ],
+  "language": "eng",
+  "notes": "Copyright His Majesty the King in Right of Canada, as represented by the Minister of Environment and Climate Change. Accompanies: Pelletier, N., Yang, Z., Laforest, S., Wojnarowicz, P., Hollebone, B.P., Beaulac, V. Source apportionment of PACs and petroleum biomarkers in British Columbia intertidal sediments: an urban-to-remote baseline for spill response. Submitted to Environmental Pollution."
+}

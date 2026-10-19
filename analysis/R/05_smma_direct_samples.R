@@ -9,25 +9,27 @@ catmap  <- read.csv(file.path(cfg$data_dir, "source_category_mapping.csv"), chec
 groups  <- analyte_groupings(names(samples))
 sites   <- read.csv(file.path(cfg$out_dir, "site_classification.csv"))   # from script 02
 
+# Label library profiles with the nine main-text categories, so per-sample
+# category summaries are in that scheme (the fits do not depend on labels).
+srclib$category <- catmap$category_maintext[match(srclib$source, catmap$source)]
+
 # EPA16 composition only, Kow weights, no S/N (S/N is a PMF diagnostic)
 epa16 <- intersect(names(samples), groups$EPA16)    # column order of the input file
 bt <- smma_samples(samples, srclib, sample_col = "pit_code", B = 300, seed = cfg$seed,
                    analytes = epa16, min_shared = 8, min_analytes = 8,
                    kow = kow, kow_args = cfg$kow_args)
-bt$per_source$category_maintext <- catmap$category_maintext[match(bt$per_source$source, catmap$source)]
 out(bt$per_source, "smma_direct_samples_per_source.csv")
-out(bt$per_category, "smma_direct_samples_per_library_category.csv")
+out(bt$per_category, "smma_direct_samples_per_category.csv")
 
 # Per-sample weights summed into the nine main-text categories, then median
 # and mean across the samples of each site class.
 by_site_class <- function(w) {
-  w$category_s10 <- catmap$category_maintext[match(w$source, catmap$source)]
-  ps <- stats::aggregate(weight ~ factor + category_s10, data = w, FUN = sum)
+  ps <- stats::aggregate(weight ~ factor + category, data = w, FUN = sum)
   names(ps)[1] <- "sample"
   ps$site_class <- sites$site_class[match(ps$sample, sites$sample)]
-  s <- do.call(rbind, lapply(split(ps, list(ps$site_class, ps$category_s10), drop = TRUE),
+  s <- do.call(rbind, lapply(split(ps, list(ps$site_class, ps$category), drop = TRUE),
                              function(d) data.frame(site_class = d$site_class[1],
-                                                    category = d$category_s10[1],
+                                                    category = d$category[1],
                                                     n = length(unique(d$sample)),
                                                     median_pct = 100 * stats::median(d$weight),
                                                     mean_pct = 100 * mean(d$weight))))

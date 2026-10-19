@@ -16,11 +16,10 @@ library(smma)   # remotes::install_git("https://gccode.ssc-spc.gc.ca/PelletierN-
 
 cfg <- list(
   data_dir   = "analysis/data",
-  out_dir    = "analysis/output",
   ex         = function(f) system.file("extdata", f, package = "smma", mustWork = TRUE),
 
   # SMMA settings used in the manuscript
-  B          = 10000,   # bootstrap draws per factor
+  B          = getOption("smma.B", 10000),  # bootstrap draws per factor
   seed       = 42,
   min_shared = 12,
   min_sel_rate = 0.20,  # best-guess mixture retention rules
@@ -36,6 +35,8 @@ cfg <- list(
   # Attribution summaries
   ci_B = 2000, ci_seed = 42
 )
+# Outputs of the two weightings are kept apart.
+cfg$out_dir <- if (cfg$kow_double_log) "analysis/output_double_log" else "analysis/output"
 cfg$kow_args <- if (cfg$kow_double_log) {
   list(input_scale = "log10", transform = log10, matrix = "sediment")
 } else {

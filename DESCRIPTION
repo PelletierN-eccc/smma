@@ -35,3 +35,5 @@ Suggests:
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 URL: https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

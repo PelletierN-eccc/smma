@@ -8,3 +8,4 @@ smma_*.tar.gz
 inst/doc
 /doc/
 /Meta/
+analysis/figures*/

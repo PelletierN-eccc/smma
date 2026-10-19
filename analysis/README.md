@@ -11,7 +11,13 @@ source("analysis/R/03_spatial_regression.R")  # Section 3.2; Section S15 (needs 
 source("analysis/R/04_biomarker_sensitivity.R") # Sections 2.8 and 3.1.6; Section S12 (slow)
 source("analysis/R/05_smma_direct_samples.R") # Section 3.6; Section S11; Table S10 (after 02)
 source("analysis/R/06_burden_and_texture.R")  # Sections 3.4-3.5; Tables S4, S6 (after 02)
+source("analysis/R/08_figures.R")             # Figure 3; Figures S4-S15, S21, S24-S26
+source("analysis/R/09_tables.R")              # Table 2; Tables S4, S6, S10, S12-S14 (CSV, xlsx)
 ```
+
+Figures are written to `analysis/figures/` as 600-dpi LZW TIFF (17 cm wide) with PNG
+previews; tables to `analysis/output/tables/`. All figures use one colour per
+nine-category source family, in the same order.
 
 `07_compare_kow_weighting.R` tabulates every weight-dependent number under both Kow
 weightings (run scripts 01-06 with `options(smma.kow_double_log = TRUE)` and without it

@@ -9,8 +9,13 @@ source("analysis/R/01_smma_factors.R")        # Sections 2.5–2.7 and 3.1; Figu
 source("analysis/R/02_source_attribution.R")  # Section 3.3; Table 2; Table S13; Figure S26
 source("analysis/R/03_spatial_regression.R")  # Section 3.2; Section S15 (needs DFO layers)
 source("analysis/R/04_biomarker_sensitivity.R") # Sections 2.8 and 3.1.6; Section S12 (slow)
-source("analysis/R/05_smma_direct_samples.R") # Section 3.6; Section S11
+source("analysis/R/05_smma_direct_samples.R") # Section 3.6; Section S11; Table S10 (after 02)
+source("analysis/R/06_burden_and_texture.R")  # Sections 3.4-3.5; Tables S4, S6 (after 02)
 ```
+
+`07_compare_kow_weighting.R` tabulates every weight-dependent number under both Kow
+weightings (run scripts 01-06 with `options(smma.kow_double_log = TRUE)` and without it
+first; it is run with `Rscript` from the repository root).
 
 All settings are in `analysis/R/00_config.R`: B = 10,000 draws, seed = 42 and the
 retention thresholds. Outputs go to `analysis/output/`; for a quick run, set
@@ -29,6 +34,7 @@ retention thresholds. Outputs go to `analysis/output/`; for a quick run, set
 | `analysis/data/sites.csv` | Sample coordinates and campaign |
 | `analysis/data/population_centres_bc.csv` | Coastal BC population centres (2021 Census) |
 | `analysis/data/source_category_mapping.csv` | Source → 9-category (main text) and 17-category (SI) schemes |
+| `analysis/data/sample_texture.csv` | % fines (< 63 µm) and TOC per sample, built from the ECCC Data Catalogue release by `prep_sample_texture.R` |
 | `analysis/data/biomarker_bounds_*.csv` | Low, central and high bounding biomarker values used in the sensitivity test (not measurements; see `biomarker_bounds_README.txt`) |
 
 The complete field dataset (sediment chemistry, grain size, TOC and site metadata

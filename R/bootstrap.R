@@ -119,10 +119,15 @@ smma_bootstrap <- function(input, B = 1000, seed = NULL, kow = NULL, sn = NULL,
   })
   names(res) <- fac_ids
   res <- res[!vapply(res, is.null, logical(1))]
+  rbind_el <- function(el) {
+    out <- do.call(rbind, unname(lapply(res, `[[`, el)))
+    rownames(out) <- NULL
+    out
+  }
   structure(list(
-    per_source = do.call(rbind, lapply(res, `[[`, "per_source")),
-    per_category = do.call(rbind, lapply(res, `[[`, "per_category")),
-    fit = do.call(rbind, lapply(res, `[[`, "fit")),
+    per_source = rbind_el("per_source"),
+    per_category = rbind_el("per_category"),
+    fit = rbind_el("fit"),
     draws = if (keep_draws) lapply(res, `[[`, "draws") else NULL,
     draw_weights = if (keep_draws) lapply(res, `[[`, "draw_weights") else NULL,
     settings = list(B = B, seed = seed, keep_best = keep_best, min_analytes = min_analytes)

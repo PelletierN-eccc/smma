@@ -143,5 +143,7 @@ best_matches <- function(distances, n = 1) {
                  stringsAsFactors = FALSE)
     }))
   })
-  do.call(rbind, out)
+  out <- do.call(rbind, out)
+  rownames(out) <- NULL
+  out
 }

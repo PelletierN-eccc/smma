@@ -31,3 +31,25 @@ test_that("profile distances are sensible", {
   b <- best_matches(d, n = 2)
   expect_true(all(b$rank %in% 1:2))
 })
+
+test_that("distance_to_features and fit_distance_decay work on projected data", {
+  skip_if_not_installed("sf")
+  skip_if_not_installed("nlme")
+  set.seed(1)
+  n <- 40
+  xy <- cbind(stats::runif(n, 0, 1e4), stats::runif(n, 0, 1e4))
+  pts <- sf::st_as_sf(data.frame(x = xy[, 1], y = xy[, 2]), coords = c("x", "y"), crs = 3005)
+  hub <- sf::st_sf(geometry = sf::st_sfc(sf::st_point(c(5000, 5000)), crs = 3005))
+  sq <- sf::st_polygon(list(rbind(c(0, 0), c(1000, 0), c(1000, 1000), c(0, 1000), c(0, 0))))
+  box <- sf::st_sf(geometry = sf::st_sfc(sq, crs = 3005))
+  d <- distance_to_features(pts, list(hub = hub, box = box))
+  expect_equal(names(d), c("dist_hub", "dist_box"))
+  expect_equal(d$dist_hub, sqrt((xy[, 1] - 5000)^2 + (xy[, 2] - 5000)^2))
+  df <- data.frame(F1 = 10 * exp(-d$dist_hub / 3000) + stats::rnorm(n, 0, 0.5), d,
+                   X = xy[, 1], Y = xy[, 2])
+  df <- rbind(df, df[1:3, ])
+  r <- fit_distance_decay(df, "F1", "dist_hub")
+  expect_equal(r$n, n)
+  expect_lt(r$estimate, 0)
+  expect_lt(r$p_value, 0.001)
+})

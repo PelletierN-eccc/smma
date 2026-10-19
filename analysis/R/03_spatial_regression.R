@@ -31,6 +31,7 @@ d <- cbind(d, distance_to_features(pts, layers))
 xy <- st_coordinates(pts); d$X <- xy[, 1]; d$Y <- xy[, 2]
 
 factors <- grep("^Factor", names(contrib), value = TRUE)
+for (f in factors) d[[f]] <- pmax(d[[f]], 0)          # negative scores set to 0, as in the original
 d <- relative_contributions(d, factors)
 res <- fit_distance_decay(d,
                           responses = c(factors, paste0(factors, "_logit")),

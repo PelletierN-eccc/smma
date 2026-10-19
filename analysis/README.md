@@ -13,7 +13,8 @@ source("analysis/R/05_smma_direct_samples.R") # Section 3.6; Section S11
 ```
 
 All settings are in `analysis/R/00_config.R`: B = 10,000 draws, seed = 42 and the
-retention thresholds. Outputs go to `analysis/output/`.
+retention thresholds. Outputs go to `analysis/output/`; for a quick run, set
+`options(smma.B = 1000)` before sourcing a script.
 
 ## Data
 
@@ -39,10 +40,12 @@ data. They are not redistributed here; the script header has download links.
 
 ## Notes on reproducing the published numbers
 
-- **Kow weighting.** `kow.csv` tabulates log10 Kow. In the published analysis these
-  values went through one more log10 transform, so the effective weights were
-  proportional to log10(log10 Kow). `00_config.R` reproduces this by default
-  (`kow_double_log = TRUE`). Set it to `FALSE` for weights proportional to log10 Kow.
+- **Kow weighting.** `kow.csv` tabulates log10 Kow. By default (`kow_double_log = FALSE`
+  in `00_config.R`) the per-analyte Kow weights are proportional to log10 Kow, scaled
+  to a mean of 1, as described in the Methods. In the original submission draft these
+  values went through a second log10 transform, so the weights were proportional to
+  log10(log10 Kow). Set `kow_double_log = TRUE` to reproduce the weighting of the
+  original submission draft; outputs then go to `analysis/output_double_log/`.
 - **Diagnostic ratios.** `diagnostic_ratios()` computes Ant/(Ant+Phe) with
   phenanthrene (`pah_c0_p`). The SI heat map (Figure S4) was produced with an earlier
   script that used perylene (`pah_pe`) in that denominator.

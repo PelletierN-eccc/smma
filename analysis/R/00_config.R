@@ -25,12 +25,12 @@ cfg <- list(
   min_sel_rate = 0.20,  # best-guess mixture retention rules
   min_weight   = 0.01,
 
-  # Kow weighting. kow.csv tabulates log10 Kow. The manuscript analysis
-  # passed these values to a function that applied log10() again, i.e. the
-  # weights were proportional to log10(log10 Kow). Set kow_double_log to
-  # FALSE to use weights proportional to log10 Kow, as described in the
-  # Methods text.
-  kow_double_log = TRUE,
+  # Kow weighting. kow.csv tabulates log10 Kow, and weights are
+  # proportional to log10 Kow, scaled to a mean of 1 (Methods 2.6).
+  # kow_double_log = TRUE reproduces the weighting of the original
+  # submission draft, in which these values were log10-transformed a
+  # second time (weights proportional to log10(log10 Kow)).
+  kow_double_log = FALSE,
 
   # Attribution summaries
   ci_B = 2000, ci_seed = 42

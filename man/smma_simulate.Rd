@@ -1,0 +1,32 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{smma_simulate}
+\alias{smma_simulate}
+\title{Simulate factor profiles from known library mixtures}
+\usage{
+smma_simulate(source_library, mixtures, noise_sd = 0, analytes = NULL, analyte_pattern = "^(pah_|tph_|biom_)", source_col = "source", seed = NULL)
+}
+\arguments{
+\item{source_library}{Source library.}
+\item{mixtures}{Named list; each element is a named numeric vector of
+source weights (names are source identifiers).}
+\item{noise_sd}{Standard deviation of log-normal noise (0 = none).}
+\item{analytes}{Analytes to keep (default: all matching \code{analyte_pattern}).}
+\item{analyte_pattern}{Pattern for analyte columns.}
+\item{source_col}{Source identifier column.}
+\item{seed}{Optional seed.}
+}
+\description{
+Builds synthetic "factors" as known mixtures of library profiles, with
+optional multiplicative log-normal noise, to check how well SMMA
+recovers a known answer with a given library and analyte suite.
+}
+\value{
+Data frame of factor profiles (column \code{factor} + analytes) with
+the true mixtures in attribute \code{"truth"}.
+}
+\examples{
+ex <- smma_example()
+src <- ex$library$source[1:2]
+sim <- smma_simulate(ex$library, list(F1 = stats::setNames(c(0.7, 0.3), src)))
+attr(sim, "truth")
+}

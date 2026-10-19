@@ -1,0 +1,31 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{read_factor_profiles}
+\alias{read_factor_profiles}
+\title{Read receptor-model factor profiles}
+\usage{
+read_factor_profiles(x, sheet = "Profiles_conc", species_col = "species", factor_col = "factor")
+}
+\arguments{
+\item{x}{A file path (CSV or Excel) or a data frame.}
+\item{sheet}{Excel sheet (default \code{"Profiles_conc"} when reading an
+Excel file; ignored for CSV and data frames).}
+\item{species_col}{Name of the species column in the long layout. If
+this column is absent, \code{x} is assumed to be wide already.}
+\item{factor_col}{Name of the factor-identifier column in the output
+(and in the input, for the wide layout).}
+}
+\description{
+Reads factor profiles (concentration of each analyte in each factor)
+and returns one row per factor. Accepts the "long" layout exported by
+EPA PMF 5.0 (one row per species, one column per factor) or a "wide"
+layout that already has one row per factor.
+}
+\value{
+A data frame with a \code{factor_col} column and one numeric column
+per analyte.
+}
+\examples{
+prof <- read_factor_profiles(system.file("extdata", "bc_factor_profiles.csv",
+package = "smma"))
+prof[, 1:5]
+}

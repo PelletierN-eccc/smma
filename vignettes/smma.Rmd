@@ -1,0 +1,153 @@
+---
+title: "Getting started with smma"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with smma}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(smma)
+```
+
+**smma** helps answer *what is this receptor-model factor made of?* A PMF
+factor is a statistical pattern. SMMA (Source Mixture Matching Analysis)
+fits it as a non-negative mixture of independently measured source
+profiles and tells you how stable that answer is.
+
+The package works with any analytes and any source library. The
+examples use polycyclic aromatic compounds (PACs) and petroleum
+biomarkers in coastal sediments.
+
+## 1. Your inputs
+
+You need four tables. CSV or Excel both work.
+
+| Input | Shape | Reader |
+|---|---|---|
+| Factor profiles | species x factors (EPA PMF "Profiles_conc"), or factors x species | `read_factor_profiles()` |
+| Factor contributions | samples x factors | `read_factor_contributions()` |
+| Source library | one row per source profile: `source`, `category`, analyte columns | `read_source_library()` |
+| Optional: S/N per factor, Kow per analyte | factors x analytes; one value per analyte | `read_sn()`, `read_kow()` |
+
+Analyte columns must use the **same names** in all tables. Missing values
+in the library are allowed. They are treated as zero in the fit (see
+`fill_library_gaps()` and `update_library()` to test that assumption).
+
+The example data are the four-factor PMF solution for 211 intertidal
+sediments from British Columbia and a 371-profile library:
+
+```{r}
+ex <- smma_example()
+ex$profiles[, 1:6]
+head(ex$library[, 1:5])
+```
+
+## 2. Prepare and fit
+
+```{r}
+inp <- smma_prepare(ex$profiles, ex$library)
+inp
+```
+
+`smma_prepare()` keeps the analytes shared by factors and library and
+normalizes every profile to unit sum. A quick point estimate:
+
+```{r}
+fit <- smma_fit(inp, kow = ex$kow, sn = ex$sn)
+head(fit[order(fit$factor, -fit$weight), ], 8)
+```
+
+## 3. Bootstrap for uncertainty
+
+`smma_bootstrap()` resamples analytes with replacement, refits, and
+weights draws by fit quality. Use `B = 1000` or more for real work. A
+small `B` keeps this vignette fast.
+
+```{r}
+bt <- smma_bootstrap(inp, B = 100, seed = 42, kow = ex$kow, sn = ex$sn)
+bt
+mix <- smma_best_mixture(bt)
+mix$categories
+```
+
+```{r, fig.width = 8, fig.height = 5, eval = requireNamespace("ggplot2", quietly = TRUE)}
+plot_smma(bt, min_weight = 0.02)
+```
+
+**Weights.** Each analyte's weight is the product of a Kow term (particle
+affinity) and the factor's S/N. If your Kow table holds log10 Kow (the
+usual tabulated form), keep the default `kow_args = list(input_scale = "log10")`.
+For dissolved-phase samples, use `kow_args = list(matrix = "water")`.
+
+## 4. Back to samples
+
+`attribute_sources()` converts the factor mixtures into source-resolved
+concentrations for any grouping of analytes. Here the groupings are
+EPA16, parent, alkylated and total PACs:
+
+```{r}
+groups <- analyte_groupings(names(ex$profiles))
+att <- attribute_sources(ex$contributions, ex$profiles, mix$sources, groups)
+head(att)
+```
+
+Summarise by any sample grouping (here by sampling campaign, read from
+the sample code):
+
+```{r}
+camp <- data.frame(sample = unique(att$sample))
+camp$campaign <- sub("_.*", "", camp$sample)
+s <- summarise_attribution(att[att$grouping == "EPA16", ], groups = camp,
+                           group_col = "campaign", B = 200, seed = 1)
+head(s[order(s$group, -s$mean), c("group", "category", "n", "mean", "lo", "hi", "share_pct")])
+```
+
+To regroup sources into your own categories without refitting, pass a
+`category_map` data frame (`source`, `category`) to `attribute_sources()`.
+
+## 5. Other lines of evidence
+
+```{r}
+diagnostic_ratios(ex$profiles)
+head(alkylation_indices(ex$profiles))
+d <- profile_distances(ex$profiles, ex$library)
+best_matches(d)[1:6, ]
+```
+
+## 6. Check what the library can resolve
+
+Simulate factors from known mixtures and see whether SMMA recovers them.
+This is a good first step with a new library:
+
+```{r}
+fo <- ex$library$source[ex$library$category == "Fuel oil (fresh)"][1]
+bb <- ex$library$source[ex$library$category == "Biomass combustion"][1]
+sim <- smma_simulate(ex$library, list(test = setNames(c(0.6, 0.4), c(fo, bb))),
+                     noise_sd = 0.1, seed = 1)
+r <- smma_fit(smma_prepare(sim, ex$library))
+head(r[order(-r$weight), c("source", "category", "weight")], 5)
+```
+
+## 7. Using your own naming scheme
+
+Analyte groupings, diagnostic ratios and alkylation indices read column
+names from an *analyte scheme*. Start from `ests_analyte_scheme()` and edit
+it for your columns, for example:
+
+```{r}
+sch <- ests_analyte_scheme()
+sch$ratio["phe"]          # which column is phenanthrene
+names(sch$homologues)
+```
+
+## 8. Spatial tools
+
+`classify_sites()` labels sites Urban/Mixed/Remote from distances to
+population centres (`default_population_tiers()` sets the radii).
+`distance_to_features()` (needs **sf**) and `fit_distance_decay()` (needs
+**nlme**) test whether factor contributions decline with distance from
+infrastructure layers. See `analysis/R/03_spatial_regression.R` in the
+repository for a complete example.

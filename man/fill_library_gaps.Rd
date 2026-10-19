@@ -1,0 +1,29 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{fill_library_gaps}
+\alias{fill_library_gaps}
+\title{Fill missing analytes in a source library (sensitivity analysis)}
+\usage{
+fill_library_gaps(source_library, fill, category_col = "category", only_missing = TRUE)
+}
+\arguments{
+\item{source_library}{Source library data frame.}
+\item{fill}{Data frame with columns \code{category}, \code{analyte} and \code{value},
+and optionally \code{ref_analyte}. If \code{ref_analyte} is given (non-NA), the
+filled value is \code{value * library[[ref_analyte]]} (ratio basis);
+otherwise \code{value} is used as is (absolute basis).}
+\item{category_col}{Category column of the library.}
+\item{only_missing}{Only replace missing (NA) values; existing values
+are never overwritten when \code{TRUE}.}
+}
+\description{
+Literature source profiles often report only part of the analyte
+suite (for example, no petroleum biomarkers). By default SMMA treats a
+missing value as zero, which can structurally favour profiles that do
+report those analytes. This function fills missing values with
+user-supplied bounding values so that the effect of that assumption
+can be tested by refitting (see the vignette).
+}
+\value{
+The library with filled values, plus a logical attribute
+\code{"filled"} marking the modified cells.
+}

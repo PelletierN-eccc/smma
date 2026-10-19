@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "smma: Source Mixture Matching Analysis for receptor-model factors"
+version: 0.1.0
+date-released: 2026-10-19
+license: MIT
+authors:
+  - family-names: Pelletier
+    given-names: Nicolas
+    affiliation: "Environment and Climate Change Canada, Emergency Science and Technology Section"
+repository-code: "https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma"
+preferred-citation:
+  type: article
+  title: "Source apportionment of PACs and petroleum biomarkers in British Columbia intertidal sediments: an urban-to-remote baseline for spill response"
+  authors:
+    - family-names: Pelletier
+      given-names: Nicolas
+    - family-names: Yang
+      given-names: Zeyu
+    - family-names: Laforest
+      given-names: Sonia
+    - family-names: Wojnarowicz
+      given-names: Pola
+    - family-names: Hollebone
+      given-names: Bruce P.
+    - family-names: Beaulac
+      given-names: Vanessa
+  journal: "Environmental Pollution"
+  status: submitted
+  year: 2026

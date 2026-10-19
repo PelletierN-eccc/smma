@@ -1,0 +1,37 @@
+Package: smma
+Type: Package
+Title: Source Mixture Matching Analysis for Receptor-Model Factors
+Version: 0.1.0
+Authors@R: c(
+    person("Nicolas", "Pelletier", email = "nicolas.pelletier@ec.gc.ca",
+           role = c("aut", "cre")),
+    person("Environment and Climate Change Canada", role = c("cph", "fnd")))
+Description: Tools to interpret factors resolved by Positive Matrix
+    Factorization (PMF) or other receptor models by fitting each factor
+    profile as a non-negative mixture of an external library of measured
+    source profiles (bootstrapped, weighted non-negative least squares),
+    and to propagate the resulting source weights back to samples for
+    any grouping of analytes. Also provides profile-distance metrics,
+    diagnostic ratios and alkylation indices for polycyclic aromatic
+    compounds, distance-based site classification, and spatial
+    distance-decay regressions. Analyte names, groupings and source
+    categories are user-configurable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports:
+    nnls,
+    stats,
+    tools,
+    utils
+Suggests:
+    readxl,
+    nlme,
+    sf,
+    ggplot2,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma

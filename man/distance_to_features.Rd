@@ -1,0 +1,24 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{distance_to_features}
+\alias{distance_to_features}
+\title{Distance from points to the nearest feature of each layer}
+\usage{
+distance_to_features(points, layers, crs = NULL, polygon_as_boundary = TRUE)
+}
+\arguments{
+\item{points}{An \code{sf} object of sample locations.}
+\item{layers}{Named list of \code{sf} objects (e.g. anchorages, harbours).
+Polygons are converted to their boundaries so that points inside a
+polygon get the distance to its edge rather than zero; set
+\code{polygon_as_boundary = FALSE} to keep zero distances inside polygons.}
+\item{crs}{Projected CRS (EPSG code or \code{crs} object) used for
+distances; defaults to the CRS of \code{points}. Use a metric projection.}
+\item{polygon_as_boundary}{See \code{layers}.}
+}
+\description{
+Distance from points to the nearest feature of each layer
+}
+\value{
+Data frame with one \code{dist_<layer>} column (metres) per layer,
+in the row order of \code{points}.
+}

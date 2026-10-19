@@ -1,0 +1,29 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{classify_sites}
+\alias{classify_sites}
+\title{Classify sites as Urban, Mixed or Remote from population centres}
+\usage{
+classify_sites(sites, centres, site_col = "site", site_lat = "latitude", site_lon = "longitude", centre_name = "name", centre_lat = "latitude", centre_lon = "longitude", centre_pop = "population", tiers = default_population_tiers())
+}
+\arguments{
+\item{sites}{Data frame with a site identifier and coordinates.}
+\item{centres}{Data frame of settlements with name, coordinates and population.}
+\item{site_col,site_lat,site_lon}{Column names in \code{sites}.}
+\item{centre_name,centre_lat,centre_lon,centre_pop}{Column names in \code{centres}.}
+\item{tiers}{Tier table, see \code{\link{default_population_tiers}()}.}
+}
+\description{
+A site is "Urban" if it lies within the urban radius of any settlement,
+"Mixed" if within any settlement's mixed radius but no urban radius,
+and "Remote" otherwise.
+}
+\value{
+\code{sites} with added columns \code{site_class}, \code{nearest_centre} and
+\code{nearest_km} (distance to the nearest settlement).
+}
+\examples{
+sites <- data.frame(id = c("a", "b"), lat = c(49.28, 52.0), lon = c(-123.12, -128.0))
+towns <- data.frame(name = "Vancouver", latitude = 49.2827, longitude = -123.1207,
+population = 662248)
+classify_sites(sites, towns, site_col = "id", site_lat = "lat", site_lon = "lon")
+}

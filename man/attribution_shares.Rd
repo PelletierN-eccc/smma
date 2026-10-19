@@ -1,0 +1,22 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{attribution_shares}
+\alias{attribution_shares}
+\title{Per-sample percentage shares and their medians}
+\usage{
+attribution_shares(attribution, groups = NULL, group_col = "group", level = "category")
+}
+\arguments{
+\item{attribution}{Output of \code{\link{attribute_sources}()}.}
+\item{groups}{Data frame mapping \code{sample} to a grouping column, or
+\code{NULL} to summarise all samples together.}
+\item{group_col}{Name of the grouping column in \code{groups}.}
+\item{level}{Column of \code{attribution} holding categories (or sources).}
+}
+\description{
+Expresses each sample's attributed burden as percentages by category
+(within each analyte grouping) and returns the median percentage per
+group x category x grouping.
+}
+\value{
+Data frame with \code{group}, \code{level}, \code{grouping}, \code{n}, \code{median_pct}.
+}

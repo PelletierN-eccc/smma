@@ -1,0 +1,53 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{attribute_sources}
+\alias{attribute_sources}
+\title{Attribute sample concentrations to library sources}
+\usage{
+attribute_sources(contributions, profiles, mixture, groupings, sample_col = "sample", factor_col = "factor", category_col = "category", category_map = NULL, level = c("category", "source"), negative = c("drop", "zero"))
+}
+\arguments{
+\item{contributions}{Data frame of factor contributions, one row per
+sample (see \code{\link{read_factor_contributions}()}).}
+\item{profiles}{Factor profiles in concentration units (see
+\code{\link{read_factor_profiles}()}); not the normalized \code{smma_input$F}.}
+\item{mixture}{Source weights: the \code{sources} element of
+\code{\link{smma_best_mixture}()} or any data frame with \code{factor}, \code{source},
+\code{weight} and a category column.}
+\item{groupings}{Named list of analyte vectors, e.g. from
+\code{\link{analyte_groupings}()}.}
+\item{sample_col,factor_col}{Identifier columns in \code{contributions} and
+\code{profiles} (factor columns in \code{contributions} must match the factor
+identifiers in \code{profiles}).}
+\item{category_col}{Category column in \code{mixture} used for aggregation;
+set \code{level = "source"} to keep individual sources.}
+\item{category_map}{Optional data frame with columns \code{source} and
+\code{category} that replaces the categories of \code{mixture} (useful to
+regroup sources without refitting).}
+\item{level}{\code{"category"} (default) or \code{"source"}.}
+\item{negative}{How to treat negative contributions: \code{"drop"} (as in
+the accompanying analysis) or \code{"zero"}.}
+}
+\description{
+Propagates SMMA source weights back to samples. For sample *i*, source
+*s* and analyte grouping *G*:
+
+\deqn{C(i,s,G) = \sum_f g(i,f) \, w(f,s) \sum_{a \in G} F(f,a)}
+
+where \code{g} are the receptor-model contributions (scores), \code{F} the factor
+profiles in concentration units and \code{w} the SMMA weights (renormalized
+within each factor over the retained sources).
+}
+\value{
+Long data frame with columns \code{sample}, \code{category} (or
+\code{source}), \code{grouping} and \code{value}. Every sample x category x grouping
+combination is present (zero when nothing was attributed), so means
+and medians are not biased by missing rows.
+}
+\examples{
+ex <- smma_example()
+bt <- smma_bootstrap(smma_prepare(ex$profiles, ex$library), B = 30, seed = 1)
+mix <- smma_best_mixture(bt)
+att <- attribute_sources(ex$contributions, ex$profiles, mix$sources,
+analyte_groupings(names(ex$profiles)))
+head(att)
+}

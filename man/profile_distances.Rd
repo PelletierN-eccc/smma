@@ -1,0 +1,29 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{profile_distances}
+\alias{profile_distances}
+\title{Distances between factor profiles and library profiles}
+\usage{
+profile_distances(profiles, source_library, factor_col = "factor", source_col = "source", category_col = "category", analytes = NULL, analyte_pattern = "^(pah_|tph_|biom_)", min_shared = 12, weights = NULL)
+}
+\arguments{
+\item{profiles}{Factor profiles (one row per factor).}
+\item{source_library}{Source library.}
+\item{factor_col,source_col,category_col}{Identifier columns.}
+\item{analytes}{Analytes to use (default: shared columns matching \code{analyte_pattern}).}
+\item{analyte_pattern}{Pattern used when \code{analytes} is \code{NULL}.}
+\item{min_shared}{Minimum shared analytes for a comparison.}
+\item{weights}{Optional function \code{function(factor_id, analytes)}
+returning per-analyte weights for the weighted chi-square.}
+}
+\description{
+Compares every factor with every library source over the analytes
+they share (both renormalized to unit sum on that subset) using cosine
+similarity, correlation distance (1 - Pearson r), Bray-Curtis
+distance, Euclidean distance and mean chi-square. Optionally adds a
+weighted chi-square on log-transformed, total-scaled profiles with
+per-analyte weights (e.g. Kow x S/N).
+}
+\value{
+Data frame, one row per factor x source, with \code{n_shared} and
+the metrics. Use \code{\link{best_matches}()} to rank.
+}

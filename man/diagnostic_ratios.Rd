@@ -1,0 +1,25 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{diagnostic_ratios}
+\alias{diagnostic_ratios}
+\title{Classic PAC diagnostic ratios}
+\usage{
+diagnostic_ratios(x, id_col = "factor", scheme = ests_analyte_scheme())
+}
+\arguments{
+\item{x}{Data frame of factor profiles or samples.}
+\item{id_col}{Identifier column.}
+\item{scheme}{Analyte scheme (\code{\link{ests_analyte_scheme}()}).}
+}
+\description{
+Computes Ant/(Ant+Phe), Fla/(Fla+Pyr), BaA/(BaA+Chr) and
+IcdP/(IcdP+BghiP) for each row of a profile or sample table, using the
+compound columns defined in the analyte scheme.
+}
+\value{
+Data frame with \code{id_col} and one column per ratio.
+}
+\examples{
+prof <- read_factor_profiles(system.file("extdata", "bc_factor_profiles.csv",
+package = "smma"))
+diagnostic_ratios(prof)
+}

@@ -1,0 +1,30 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{smma_samples}
+\alias{smma_samples}
+\title{Apply SMMA directly to samples}
+\usage{
+smma_samples(samples, source_library, sample_col = "sample", sources = NULL, B = 300, ...)
+}
+\arguments{
+\item{samples}{Data frame of sample concentrations, one row per sample.}
+\item{source_library}{Source library.}
+\item{sample_col}{Sample identifier column.}
+\item{sources}{Optional character vector restricting the candidate sources.}
+\item{B}{Bootstrap draws per sample (0 for point estimates only).}
+\item{...}{Passed to \code{\link{smma_prepare}()} and \code{\link{smma_bootstrap}()} (e.g.
+\code{analytes}, \code{kow}, \code{seed}).}
+\item{...}{Passed to \code{\link{smma_prepare}()} and \code{\link{smma_bootstrap}()} (e.g.
+\code{analytes}, \code{kow}, \code{seed}).}
+}
+\description{
+Fits each sample's own normalized composition against the library,
+bypassing the receptor model. Useful for testing whether a specific
+source is present in particular samples, ideally with a short,
+well-justified candidate list (\code{sources}). Without the cross-sample
+pooling of a receptor model, low-concentration samples often give
+poorly constrained mixtures.
+}
+\value{
+An \code{smma_bootstrap} object (B > 0) or the output of
+\code{\link{smma_fit}()} (B = 0), with samples in place of factors.
+}

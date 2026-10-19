@@ -1,0 +1,43 @@
+name,latitude,longitude,population,source
+Vancouver,49.2827,-123.1207,662248,StatCan 2021 Census
+Surrey,49.1913,-122.849,568322,StatCan 2021 Census
+Burnaby,49.2488,-122.9805,249125,StatCan 2021 Census
+Richmond,49.1666,-123.1336,209937,StatCan 2021 Census
+Coquitlam,49.2838,-122.7932,148625,StatCan 2021 Census
+Saanich,48.4827,-123.3617,117735,StatCan 2021 Census
+Delta,49.0847,-123.0587,108455,StatCan 2021 Census
+Nanaimo,49.1642,-123.9364,99863,StatCan 2021 Census
+Victoria,48.4283,-123.3656,91867,StatCan 2021 Census
+New Westminster,49.2057,-122.911,78916,StatCan 2021 Census
+North Vancouver District,49.34,-123.074,88168,StatCan 2021 Census
+Port Coquitlam,49.2621,-122.7811,61498,StatCan 2021 Census
+North Vancouver City,49.3163,-123.0693,58120,StatCan 2021 Census
+Langford,48.4496,-123.5026,46584,StatCan 2021 Census
+West Vancouver,49.3665,-123.161,42473,StatCan 2021 Census
+Port Moody,49.2838,-122.8503,33551,StatCan 2021 Census
+North Cowichan,48.821,-123.728,31990,StatCan 2021 Census
+Central Saanich (Brentwood Bay),48.578,-123.474,17353,StatCan 2021 Census
+North Saanich,48.667,-123.415,12265,StatCan 2021 Census
+Sidney,48.6503,-123.397,12924,StatCan 2021 Census
+Prince Rupert,54.3128,-130.3253,12300,StatCan 2021 Census
+Terrace,54.5163,-128.6034,12500,StatCan 2021 Census (approx.)
+Kitimat,54.0524,-128.6534,8236,StatCan 2021 Census
+Ladysmith,48.9953,-123.8158,8990,StatCan 2021 Census
+Duncan,48.7786,-123.7081,5047,StatCan 2021 Census
+Chemainus,48.9211,-123.7169,4033,StatCan 2021 Census
+Pender Island,48.7833,-123.2833,2770,StatCan 2021 Census
+Anmore,49.309,-122.859,2300,StatCan 2021 Census (approx.)
+Galiano Island (Sturdies Bay),48.8958,-123.3278,1396,StatCan 2021 Census
+Mayne Island (Miners Bay),48.8508,-123.2967,1100,estimate
+Lax Kw'alaams,54.55,-130.4169,1000,2016 Census
+Daajing Giids (Queen Charlotte),53.2535,-132.0698,900,estimate
+Masset,54.01,-132.1381,838,StatCan 2021 Census
+Skidegate,53.2672,-131.9906,837,2016 Census
+Belcarra,49.3011,-122.933,680,estimate
+Old Massett,54.04,-132.188,475,StatCan 2021 Census
+Port Edward,54.2206,-130.2894,470,StatCan 2021 Census
+Sandspit,53.2417,-131.825,450,estimate
+Metlakatla BC,54.3358,-130.4433,245,estimate (on-reserve)
+Port Clements,53.6878,-132.1689,282,2016 Census
+Hartley Bay,53.424,-129.25,150,estimate
+Kitkatla,53.8,-130.4333,114,2016 Census

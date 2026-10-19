@@ -1,0 +1,9 @@
+^analysis$
+^tools$
+^\.github$
+^\.gitlab-ci\.yml$
+^CITATION\.cff$
+^LICENSE\.md$
+^README\.md$
+^.*\.Rproj$
+^\.Rproj\.user$

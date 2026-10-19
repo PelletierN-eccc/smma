@@ -1,0 +1,372 @@
+source,raw_category,category_detailed,category_maintext
+Asphalt,Asphalt,Urban/traffic surface dust,Street dust
+pine gas phase,Biomass combustion,Biomass combustion,Biomass combustion
+pine particle phase,Biomass combustion,Biomass combustion,Biomass combustion
+oak gas phase,Biomass combustion,Biomass combustion,Biomass combustion
+oak particle phase,Biomass combustion,Biomass combustion,Biomass combustion
+eucalyptus gas phase,Biomass combustion,Biomass combustion,Biomass combustion
+eucalyptus particle phase,Biomass combustion,Biomass combustion,Biomass combustion
+Rosmarinus Officinalis wildifre soot,Biomass combustion,Biomass combustion,Biomass combustion
+Pinus Pinaster wildifre soot,Biomass combustion,Biomass combustion,Biomass combustion
+Arbutus Unedo wildifre soot,Biomass combustion,Biomass combustion,Biomass combustion
+Pistacia Lentiscus wildifre soot,Biomass combustion,Biomass combustion,Biomass combustion
+Cistus Monspeliensis wildifre soot,Biomass combustion,Biomass combustion,Biomass combustion
+Australian eucalypt ash - MI U,Biomass combustion,Biomass combustion,Biomass combustion
+USA chaparral - HI CU,Biomass combustion,Biomass combustion,Biomass combustion
+Canadian spruce ash - HI C,Biomass combustion,Biomass combustion,Biomass combustion
+Spanish heathland ash - HI -CU,Biomass combustion,Biomass combustion,Biomass combustion
+Spanish pine forest - HI CU,Biomass combustion,Biomass combustion,Biomass combustion
+UK grassland - MI - CU,Biomass combustion,Biomass combustion,Biomass combustion
+power plant,Coal,Coal combustion,Industrial/coal combustion
+coal-related,Coal,Coal combustion,Industrial/coal combustion
+SRM 1991 mixed coal tar/petroleum extract,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote (dark brown product),Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #1,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #2,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #3,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #4,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #5,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #6,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #7,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Creosote #8,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+Coal-tar Pitch,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+NIST Coal-tar 1991,Coal-tar scellant,Coal-tar sealcoat pavement dust,Street dust
+DEK 1,"Composite dust, Sealed lot",Coal-tar sealcoat pavement dust,Street dust
+PLM 1,"Composite dust, Sealed lot",Coal-tar sealcoat pavement dust,Street dust
+HAR 1,"Composite dust, Sealed lot",Coal-tar sealcoat pavement dust,Street dust
+SCM 1,"Composite dust, Sealed lot",Coal-tar sealcoat pavement dust,Street dust
+WTY 1,"Composite dust, Sealed lot",Coal-tar sealcoat pavement dust,Street dust
+ANN,"Composite dust, Sealed lot",Coal-tar sealcoat pavement dust,Street dust
+DEK 2,"Composite dust, unsealed lot",Urban/traffic surface dust,Street dust
+PLM 2,"Composite dust, unsealed lot",Urban/traffic surface dust,Street dust
+HAR 2,"Composite dust, unsealed lot",Urban/traffic surface dust,Street dust
+SCM 2,"Composite dust, unsealed lot",Urban/traffic surface dust,Street dust
+WTY 2,"Composite dust, unsealed lot",Urban/traffic surface dust,Street dust
+WTY 2 dup,"Composite dust, unsealed lot",Urban/traffic surface dust,Street dust
+Diesel [2002] W0,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Diesel Echo Bay (B5 Biodiesel) B5,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel [2018] W0,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel (B5) W0,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Burnaby BC W0,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Corporal Teather W0,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Hurst Marina W0,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Ile Saint Ours W0,Diesel (fresh),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Diesel [2002] W3,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel [2018] W1,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel [2018] W2,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel [2018] W3,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel (B5) W1,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel (B5) W2,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel (B5) W3,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Burnaby BC W1,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Burnaby BC W2,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Burnaby BC W3,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Corporal Teather W1,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Corporal Teather W2,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Corporal Teather W3,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Corporal Teather W4,Diesel (weathered),Light petroleum (diesel) - weathered,Light petroleum (diesel) - weathered
+Marine Diesel-Hurst Marina W1,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Hurst Marina W2,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Hurst Marina W3,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Hurst Marina W4,Diesel (weathered),Light petroleum (diesel) - weathered,Light petroleum (diesel) - weathered
+Marine Diesel-Ile Saint Ours W1,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Ile Saint Ours W2,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Ile Saint Ours W3,Diesel (weathered),Light petroleum (diesel) - fresh,Light petroleum (diesel) - fresh
+Marine Diesel-Ile Saint Ours W4,Diesel (weathered),Light petroleum (diesel) - weathered,Light petroleum (diesel) - weathered
+Diesel engine,Diesel combustion,Diesel engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+NIST Diesel particles,Diesel combustion,Diesel engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+NIST Diesel particles 2975,Diesel combustion,Diesel engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+Diesel fueled-boiler,Diesel combustion,Diesel engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+LKH.PLS2,"Dust, sealed driveway",Coal-tar sealcoat pavement dust,Street dust
+LKH.PLS3,"Dust, sealed driveway",Coal-tar sealcoat pavement dust,Street dust
+Access West Blend Winter W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaminos Canyon Block 25 W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2002] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2012] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2015] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alberta Sweet Mixed Blend #5 W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alberta Sweet Mixed Blend #6 W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Albian Heavy Synthetic W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Amauligak  W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Anadarko HIA-376 W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Arabian Heavy [2004] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Arabian Light [2002] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Atkinson W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Bunker C [1987] W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C - IFO-300 [1994] W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C MV Manolis W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C MV Manolis 2015-May operation W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C MV Manolis 2015-Oct. operation W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C Zalinski W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Chayvo W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Bitumen [1988] W0,Fuel oil (fresh),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Summer [2014] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2013] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2015] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2018] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2019] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cook Inlet [2003] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Deep Water Horizon Riser  W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Dos Cuadros HE-05 [2011] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Endicott W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Fuel Oil # 5  W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Green Canyon Block 200 W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hebron M-04 [2005] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+HFO 6303 [2002] W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Hibernia [1999] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hibernia [2018] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Husky Energy SGS W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+IFO 180 W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+IFO 180 [2004] W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Independent Hub W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Issungnak  W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mars TLP [2000] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Maya [2004] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mississippi Canyon Block 807 [2002] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Morpeth Block EW921 W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+MV Arrow [2015] W0,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Norman Wells  W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+North Star W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Odoptu W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Orimulsion 400 [2001] Before water content correction,Fuel oil (fresh),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Orimulsion 400 [2001] After drying (water content correction ),Fuel oil (fresh),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Petronius Block VK786A W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Platform Elly W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Prudhoe Bay [2004] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Rail Bitumen W0,Fuel oil (fresh),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Sockeye Sour W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+South Louisiana W0-1,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+South Louisiana W0-2,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015a] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015b] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Synthetic Bitumen Blend W0,Fuel oil (fresh),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Terra Nova [2011] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Terra Nova [2018] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Troll W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Wabiska Heavy  W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+West Delta Block 143 W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+West Texas Intermediate [2001] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Western Canadian Select  W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+White Rose [2000] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+White Rose [2018] W0,Fuel oil (fresh),Crude oil - fresh,Medium-heavy petroleum - fresh
+Chedabucto Bay original fresh oil,Fuel oil (fresh),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Access West Blend Winter W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Access West Blend Winter W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Access West Blend Winter W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Access West Blend Winter W4,Fuel oil (weathered),Crude oil - weathered,Medium-heavy petroleum - weathered
+Alaminos Canyon Block 25 W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaminos Canyon Block 25 W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaminos Canyon Block 25 W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2002] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2012] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2012] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2012] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2015] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2015] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alaska North Slope [2015] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Alberta Sweet Mixed Blend #5 W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Albian Heavy Synthetic W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Amauligak  W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Amauligak  W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Amauligak  W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Anadarko HIA-376 W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Anadarko HIA-376 W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Anadarko HIA-376 W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Arabian Heavy [2004] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Arabian Heavy [2004] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Arabian Heavy [2004] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Arabian Light [2002] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Atkinson W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Atkinson W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Atkinson W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Bunker C [1987] W3,Fuel oil (weathered),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C - IFO-300 [1994] W3,Fuel oil (weathered),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C MV Manolis W3,Fuel oil (weathered),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Bunker C Zalinski W3,Fuel oil (weathered),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Chayvo W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Chayvo W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Chayvo W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Summer [2014] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Summer [2014] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Summer [2014] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Summer [2014] W4,Fuel oil (weathered),Crude oil - weathered,Medium-heavy petroleum - weathered
+Cold Lake Blend Winter [2013] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2013] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2013] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2013] W4,Fuel oil (weathered),Crude oil - weathered,Medium-heavy petroleum - weathered
+Cold Lake Blend Winter [2015] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2015] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2015] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2018] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2018] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2018] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2019] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2019] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cold Lake Blend Winter [2019] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cook Inlet [2003] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cook Inlet [2003] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Cook Inlet [2003] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Deep Water Horizon Riser  W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Deep Water Horizon Riser  W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Deep Water Horizon Riser  W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Dos Cuadros HE-05 [2011] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Dos Cuadros HE-05 [2011] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Endicott W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Endicott W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Fuel Oil # 5  W3,Fuel oil (weathered),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Gail Well E019  W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Gail Well E019  W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Green Canyon Block 200 W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Green Canyon Block 200 W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Green Canyon Block 200 W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hebron [2018] W0,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hebron [2018] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hebron [2018] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hebron [2018] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+HFO 6303 [2002] W3,Fuel oil (weathered),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Hibernia [2018] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hibernia [2018] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Hibernia [2018] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Husky Energy SGS W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Husky Energy SGS W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Husky Energy SGS W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+IFO 180 [2004] W3,Fuel oil (weathered),Heavy fuel oil/bunker - fresh,Medium-heavy petroleum - fresh
+Independent Hub W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Independent Hub W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Issungnak  W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Issungnak  W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Issungnak  W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mars TLP [2000] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mars TLP [2000] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mars TLP [2000] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Maya [2004] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Maya [2004] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Maya [2004] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mississippi Canyon Block 807 [2002] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mississippi Canyon Block 807 [2002] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Mississippi Canyon Block 807 [2002] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Morpeth Block EW921 W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Morpeth Block EW921 W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Morpeth Block EW921 W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Norman Wells  W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Norman Wells  W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Norman Wells  W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+North Star W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+North Star W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Odoptu W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Odoptu W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Odoptu W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Petronius Block VK786A W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Petronius Block VK786A W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Petronius Block VK786A W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Platform Elly W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Platform Elly W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Platform Elly W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Prudhoe Bay [2004] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Prudhoe Bay [2004] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Prudhoe Bay [2004] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Rail Bitumen W3,Fuel oil (weathered),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Sockeye Sour W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+South Louisiana W3-1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+South Louisiana W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+South Louisiana W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+South Louisiana W3-2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015a] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015a] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015a] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015a] W4,Fuel oil (weathered),Crude oil - weathered,Medium-heavy petroleum - weathered
+Sweet Synthetic Crude Oil [2015b] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015b] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015b] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Sweet Synthetic Crude Oil [2015b] W4,Fuel oil (weathered),Crude oil - weathered,Medium-heavy petroleum - weathered
+Synthetic Bitumen Blend W1,Fuel oil (weathered),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Synthetic Bitumen Blend W2,Fuel oil (weathered),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Synthetic Bitumen Blend W3,Fuel oil (weathered),Bitumen/Orimulsion - fresh,Medium-heavy petroleum - fresh
+Terra Nova [2011] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Terra Nova [2011] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Terra Nova [2018] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Terra Nova [2018] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Terra Nova [2018] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Troll W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Troll W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Troll W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Wabiska Heavy  W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+West Delta Block 143 W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+West Delta Block 143 W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+West Delta Block 143 W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+West Texas Intermediate [2001] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Western Canadian Select  W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Western Canadian Select  W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Western Canadian Select  W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+White Rose [2018] W1,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+White Rose [2018] W2,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+White Rose [2018] W3,Fuel oil (weathered),Crude oil - fresh,Medium-heavy petroleum - fresh
+Chedabucto Bay weathered oil,Fuel oil (weathered),Heavy fuel oil/bunker - weathered,Medium-heavy petroleum - weathered
+Heavy oil fueled-boiler,Fuel oil combustion,Industrial boiler combustion (oil/gas-fired),Industrial/coal combustion
+Gasoline Eng,Gasoline combustion,Gasoline engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+Gasoline exhaust Filter,Gasoline combustion,Gasoline engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+Gasoline exhaust PUF,Gasoline combustion,Gasoline engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+Gasoline engine,Gasoline combustion,Gasoline engine combustion,Vehicle combustion (diesel/gasoline exhaust)
+BAL.SP1,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP2,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP3,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP4,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP5,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP6,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP7,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP8,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SP9,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+TNB 5,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+TNB 8,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+LKH 1,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+LKH 2,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+LKH 3,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+LKH.PLS1a,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+LKH.PLS4,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+LBJ,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+SOC,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+SSE,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+UNF,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+UTN,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+WWB,"Individual lot dust, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.USC,"Individual lot dust, unsealed lot",Urban/traffic surface dust,Street dust
+TNB 7,"Individual lot dust, unsealed lot",Urban/traffic surface dust,Street dust
+LKH 4,"Individual lot dust, unsealed lot",Urban/traffic surface dust,Street dust
+LKH.PLU1,"Individual lot dust, unsealed lot",Urban/traffic surface dust,Street dust
+HO+NG fueled-boiler,Industrial boiler emission,Industrial boiler combustion (oil/gas-fired),Industrial/coal combustion
+COG+BFG fueled-boiler,Industrial boiler emission,Industrial boiler combustion (oil/gas-fired),Industrial/coal combustion
+used motor oil after 0 km,Lubricating oil (fresh),Other oils (lubricating) - fresh,Other oils (lubricating)
+Marine Safe Lube W0,Lubricating oil (fresh),Other oils (lubricating) - fresh,Other oils (lubricating)
+used motor oil after 473 km,Lubricating oil (weathered),Other oils (lubricating) - weathered,Other oils (lubricating)
+used motor oil after 2130 km,Lubricating oil (weathered),Other oils (lubricating) - weathered,Other oils (lubricating)
+used motor oil after 3144 km,Lubricating oil (weathered),Other oils (lubricating) - weathered,Other oils (lubricating)
+used motor oil after 3635 km,Lubricating oil (weathered),Other oils (lubricating) - weathered,Other oils (lubricating)
+Used crankcase oil,Lubricating oil (weathered),Other oils (lubricating) - weathered,Other oils (lubricating)
+BAL.SKR1,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SKR2,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SKR3,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SKR5,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+BAL.SKR9,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+TNB 1,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+TNB 2,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+TNB 3,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+TNB 6,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+NTR 1,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+NTR 2,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+NTR 3,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+NTR 4,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+NRT 4 dup,"Pavement scraping, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+Street dust,Sealed lot,Coal-tar sealcoat pavement dust,Street dust
+LKH.SC2,Soil near sealed lot,Coal-tar sealcoat pavement dust,Street dust
+LKH.SC4,Soil near sealed lot,Coal-tar sealcoat pavement dust,Street dust
+LKH.SC1,Soil near unsealed lot,Urban/traffic surface dust,Street dust
+LKH.SC3,Soil near unsealed lot,Urban/traffic surface dust,Street dust
+LKH.PLS1b,"Solids near drain, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+TNB 4,"Solids near drain, unsealed lot",Urban/traffic surface dust,Street dust
+BAL.D5,"Solids, sealed lot",Coal-tar sealcoat pavement dust,Street dust
+LKH.ST2,Street dust near sealed lot,Coal-tar sealcoat pavement dust,Street dust
+LKH.ST3,Street dust near sealed lot,Coal-tar sealcoat pavement dust,Street dust
+LKH.ST4,Street dust near sealed lot,Coal-tar sealcoat pavement dust,Street dust
+LKH.ST1,Street dust near unsealed lot,Urban/traffic surface dust,Street dust
+Traffic-Related,Terrestrial traffic,Urban/traffic surface dust,Street dust
+Tire debris,Terrestrial traffic,Urban/traffic surface dust,Street dust

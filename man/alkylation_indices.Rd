@@ -1,0 +1,23 @@
+% Generated from roxygen comments by tools/roxy2rd.py
+\name{alkylation_indices}
+\alias{alkylation_indices}
+\title{Alkylation indices within homologue series}
+\usage{
+alkylation_indices(x, id_col = "factor", scheme = ests_analyte_scheme())
+}
+\arguments{
+\item{x}{Data frame of factor profiles or samples.}
+\item{id_col}{Identifier column.}
+\item{scheme}{Analyte scheme (\code{\link{ests_analyte_scheme}()}).}
+}
+\description{
+For every homologue series in the analyte scheme, returns the parent
+fraction (C0 / sum), the alkylated-to-parent ratio ((C1+...)/C0) and
+the C2+ fraction ((C2+...)/sum). High parent fractions indicate
+pyrogenic input; high alkyl/parent ratios and C2+ fractions indicate
+petrogenic input.
+}
+\value{
+Long data frame with \code{id_col}, \code{series}, \code{parent_fraction},
+\code{alkyl_parent_ratio}, \code{c2plus_fraction}.
+}

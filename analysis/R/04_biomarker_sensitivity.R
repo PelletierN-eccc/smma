@@ -21,6 +21,7 @@ is_petro <- function(category) ifelse(category %in% petro_categories, "Petrogeni
 
 bounds <- lapply(c(low = "low", central = "central", high = "high"), function(b)
   read.csv(file.path(cfg$data_dir, sprintf("biomarker_bounds_%s.csv", b)), check.names = FALSE))
+bounds <- lapply(bounds, function(x) x[!trimws(x$source) %in% drop10, ])
 
 variants <- expand.grid(magnitude = c("baseline", "low", "central", "high"),
                         drop_cap = c(FALSE, TRUE), stringsAsFactors = FALSE)

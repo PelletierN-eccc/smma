@@ -120,6 +120,10 @@ for (i in seq_len(nrow(x))) {
                               if (x$second_old[i] != x$second_new[i]) "(CHANGED)" else ""),
       x$second_pct_old[i], x$second_pct_new[i])
 }
+s <- both("tukey_outliers_elevation.csv")
+x <- merge(s$old, s$new, by = "category", suffixes = c("_old", "_new"))
+for (i in seq_len(nrow(x))) add("3.4", paste(x$category[i], "outlier / rest median ratio"),
+                                x$ratio_old[i], x$ratio_new[i], 0)
 s <- both("top5pct_largest_source.csv")
 for (k in sort(unique(c(s$old$largest, s$new$largest))))
   add("3.4", paste("top 5% samples led by", k, "(count)"), sum(s$old$largest == k), sum(s$new$largest == k), 0)

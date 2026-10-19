@@ -28,7 +28,7 @@ homologues among the PAC columns.}
 
 \item{epa16}{Character vector of EPA 16 priority PAH column names.}
 
-\item{ratio}{Named character vector; see \code{\link[=ests_analyte_scheme]{ests_analyte_scheme()}}.}
+\item{ratio}{Named character vector; see \code{\link[=default_analyte_scheme]{default_analyte_scheme()}}.}
 
 \item{homologues}{Named list of homologue series (parent first).}
 

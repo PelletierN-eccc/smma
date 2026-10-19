@@ -2,9 +2,8 @@
 #'
 #' All functions that need to know *which* column is phenanthrene, which
 #' columns are alkylated homologues, or which belong to the EPA 16
-#' priority list take an analyte scheme. `ests_analyte_scheme()` returns
-#' the column-naming convention used by the Emergency Science and
-#' Technology Section (ESTS) of Environment and Climate Change Canada
+#' priority list take an analyte scheme. `default_analyte_scheme()`
+#' returns the column-naming convention of the example data
 #' (e.g. `pah_c0_p` = phenanthrene, `pah_c2_p` = C2-phenanthrenes,
 #' `biom_c30_a_b_h` = C30 alpha-beta hopane). To use your own column
 #' names, copy this list and edit the entries, or build one with
@@ -24,10 +23,10 @@
 #'   \item{labels}{Optional named character vector of display labels.}
 #' }
 #' @examples
-#' sch <- ests_analyte_scheme()
+#' sch <- default_analyte_scheme()
 #' sch$ratio
 #' @export
-ests_analyte_scheme <- function() {
+default_analyte_scheme <- function() {
   analyte_scheme(
     pac_pattern = "^pah_",
     biomarker_pattern = "^biom_",
@@ -60,7 +59,7 @@ ests_analyte_scheme <- function() {
 #' @param exclude_pattern Regular expression for summary columns to drop
 #'   (use `NULL` for none).
 #' @param epa16 Character vector of EPA 16 priority PAH column names.
-#' @param ratio Named character vector; see [ests_analyte_scheme()].
+#' @param ratio Named character vector; see [default_analyte_scheme()].
 #' @param homologues Named list of homologue series (parent first).
 #' @param labels Optional named character vector of display labels.
 #' @return A list of class `smma_scheme`.
@@ -85,14 +84,14 @@ analyte_scheme <- function(pac_pattern, biomarker_pattern = NULL, tph_pattern = 
 #'
 #' @param analytes Character vector of available analyte column names
 #'   (e.g. `names(profiles)`).
-#' @param scheme Analyte scheme, see [ests_analyte_scheme()].
+#' @param scheme Analyte scheme, see [default_analyte_scheme()].
 #' @return A named list of character vectors.
 #' @examples
 #' prof <- read_factor_profiles(system.file("extdata", "bc_factor_profiles.csv",
 #'                                          package = "smma"))
 #' str(analyte_groupings(names(prof)))
 #' @export
-analyte_groupings <- function(analytes, scheme = ests_analyte_scheme()) {
+analyte_groupings <- function(analytes, scheme = default_analyte_scheme()) {
   pac <- grep(scheme$pac_pattern, analytes, value = TRUE)
   if (!is.null(scheme$exclude_pattern)) pac <- pac[!grepl(scheme$exclude_pattern, pac)]
   alk <- if (is.null(scheme$alkylated_pattern)) character() else

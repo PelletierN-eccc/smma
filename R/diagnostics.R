@@ -6,14 +6,14 @@
 #'
 #' @param x Data frame of factor profiles or samples.
 #' @param id_col Identifier column.
-#' @param scheme Analyte scheme ([ests_analyte_scheme()]).
+#' @param scheme Analyte scheme ([default_analyte_scheme()]).
 #' @return Data frame with `id_col` and one column per ratio.
 #' @examples
 #' prof <- read_factor_profiles(system.file("extdata", "bc_factor_profiles.csv",
 #'                                          package = "smma"))
 #' diagnostic_ratios(prof)
 #' @export
-diagnostic_ratios <- function(x, id_col = "factor", scheme = ests_analyte_scheme()) {
+diagnostic_ratios <- function(x, id_col = "factor", scheme = default_analyte_scheme()) {
   r <- scheme$ratio
   need <- c("ant", "phe", "fla", "pyr", "baa", "chr", "icdp", "bghip")
   if (!all(need %in% names(r))) stop("scheme$ratio must define: ", paste(need, collapse = ", "))
@@ -40,7 +40,7 @@ diagnostic_ratios <- function(x, id_col = "factor", scheme = ests_analyte_scheme
 #' @return Long data frame with `id_col`, `series`, `parent_fraction`,
 #'   `alkyl_parent_ratio`, `c2plus_fraction`.
 #' @export
-alkylation_indices <- function(x, id_col = "factor", scheme = ests_analyte_scheme()) {
+alkylation_indices <- function(x, id_col = "factor", scheme = default_analyte_scheme()) {
   check_cols(x, id_col, "x")
   rows <- lapply(names(scheme$homologues), function(s) {
     cols <- intersect(scheme$homologues[[s]], names(x))

@@ -4,13 +4,13 @@
 \alias{analyte_groupings}
 \title{Define analyte groupings for source attribution}
 \usage{
-analyte_groupings(analytes, scheme = ests_analyte_scheme())
+analyte_groupings(analytes, scheme = default_analyte_scheme())
 }
 \arguments{
 \item{analytes}{Character vector of available analyte column names
 (e.g. \code{names(profiles)}).}
 
-\item{scheme}{Analyte scheme, see \code{\link[=ests_analyte_scheme]{ests_analyte_scheme()}}.}
+\item{scheme}{Analyte scheme, see \code{\link[=default_analyte_scheme]{default_analyte_scheme()}}.}
 }
 \value{
 A named list of character vectors.

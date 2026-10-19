@@ -4,14 +4,14 @@
 \alias{diagnostic_ratios}
 \title{Classic PAC diagnostic ratios}
 \usage{
-diagnostic_ratios(x, id_col = "factor", scheme = ests_analyte_scheme())
+diagnostic_ratios(x, id_col = "factor", scheme = default_analyte_scheme())
 }
 \arguments{
 \item{x}{Data frame of factor profiles or samples.}
 
 \item{id_col}{Identifier column.}
 
-\item{scheme}{Analyte scheme (\code{\link[=ests_analyte_scheme]{ests_analyte_scheme()}}).}
+\item{scheme}{Analyte scheme (\code{\link[=default_analyte_scheme]{default_analyte_scheme()}}).}
 }
 \value{
 Data frame with \code{id_col} and one column per ratio.

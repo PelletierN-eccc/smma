@@ -134,11 +134,11 @@ head(r[order(-r$weight), c("source", "category", "weight")], 5)
 ## 7. Using your own naming scheme
 
 Analyte groupings, diagnostic ratios and alkylation indices read column
-names from an *analyte scheme*. Start from `ests_analyte_scheme()` and edit
+names from an *analyte scheme*. Start from `default_analyte_scheme()` and edit
 it for your columns, for example:
 
 ```{r}
-sch <- ests_analyte_scheme()
+sch <- default_analyte_scheme()
 sch$ratio["phe"]          # which column is phenanthrene
 names(sch$homologues)
 ```

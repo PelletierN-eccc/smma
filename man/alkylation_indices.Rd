@@ -4,14 +4,14 @@
 \alias{alkylation_indices}
 \title{Alkylation indices within homologue series}
 \usage{
-alkylation_indices(x, id_col = "factor", scheme = ests_analyte_scheme())
+alkylation_indices(x, id_col = "factor", scheme = default_analyte_scheme())
 }
 \arguments{
 \item{x}{Data frame of factor profiles or samples.}
 
 \item{id_col}{Identifier column.}
 
-\item{scheme}{Analyte scheme (\code{\link[=ests_analyte_scheme]{ests_analyte_scheme()}}).}
+\item{scheme}{Analyte scheme (\code{\link[=default_analyte_scheme]{default_analyte_scheme()}}).}
 }
 \value{
 Long data frame with \code{id_col}, \code{series}, \code{parent_fraction},

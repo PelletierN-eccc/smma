@@ -71,7 +71,7 @@ PAC/biomarker library).
   `print(smma_prepare(...))` reports library completeness. Test that assumption with
   `fill_library_gaps()` or `update_library()`.
 - Diagnostic ratios, homologue series and the EPA16 list are defined in an analyte
-  scheme. `ests_analyte_scheme()` is the ESTS convention; build your own with
+  scheme. `default_analyte_scheme()` matches the example data; build your own with
   `analyte_scheme()`.
 
 ## Reproducing the BC intertidal sediment study

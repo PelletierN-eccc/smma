@@ -1,7 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
-analysis/output/
+analysis/output*/
 analysis/data/ancillary/
 *.Rcheck/
 smma_*.tar.gz

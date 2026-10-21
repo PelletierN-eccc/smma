@@ -1,6 +1,5 @@
 ^analysis$
 ^\.github$
-^\.gitlab-ci\.yml$
 ^CITATION\.cff$
 ^LICENSE\.md$
 ^README\.md$

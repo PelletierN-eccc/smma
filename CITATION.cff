@@ -3,6 +3,14 @@ message: "If you use this software, please cite it as below."
 title: "smma: Source Mixture Matching Analysis for receptor-model factors"
 version: 0.1.0
 date-released: 2026-10-21
+doi: 10.5281/zenodo.23533392
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23533392
+    description: "Version 0.1.0"
+  - type: doi
+    value: 10.5281/zenodo.23533391
+    description: "All versions (concept DOI)"
 license: MIT
 authors:
   - family-names: Pelletier

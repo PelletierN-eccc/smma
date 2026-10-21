@@ -1,5 +1,8 @@
 # smma: Source Mixture Matching Analysis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23533391.svg)](https://doi.org/10.5281/zenodo.23533391)
+[![R-CMD-check](https://github.com/PelletierN-eccc/smma/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PelletierN-eccc/smma/actions/workflows/R-CMD-check.yaml)
+
 **smma** is an R package for interpreting receptor-model factors (for example from
 EPA PMF 5.0) with an external library of measured source profiles. Each factor
 profile is fitted as a non-negative mixture of library sources. Analyte resampling
@@ -108,8 +111,14 @@ weights.
 
 ## Citation
 
-If you use smma, please cite the article above and this software (see
-`CITATION.cff`).
+If you use smma, please cite the article above and this software:
+
+> Pelletier N. (2026). smma: Source Mixture Matching Analysis for receptor-model
+> factors (version 0.1.0) [software]. Zenodo. https://doi.org/10.5281/zenodo.23533392
+
+The concept DOI https://doi.org/10.5281/zenodo.23533391 always resolves to the latest
+version. In R, `citation("smma")` gives both references; `CITATION.cff` has the same
+information for GitHub's "Cite this repository".
 
 ## Licence
 

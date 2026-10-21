@@ -1,0 +1,32 @@
+bibentry(
+  bibtype = "Manual",
+  title = "smma: Source Mixture Matching Analysis for receptor-model factors",
+  author = person("Nicolas", "Pelletier"),
+  organization = "Environment and Climate Change Canada",
+  year = "2026",
+  note = "R package version 0.1.0",
+  doi = "10.5281/zenodo.23533392",
+  url = "https://github.com/PelletierN-eccc/smma",
+  textVersion = paste(
+    "Pelletier N. (2026). smma: Source Mixture Matching Analysis for receptor-model",
+    "factors. R package version 0.1.0. Zenodo. https://doi.org/10.5281/zenodo.23533392"
+  )
+)
+
+bibentry(
+  bibtype = "Article",
+  title = paste("Source apportionment of PACs and petroleum biomarkers in British Columbia",
+                "intertidal sediments: an urban-to-remote baseline for spill response"),
+  author = c(person("Nicolas", "Pelletier"), person("Zeyu", "Yang"),
+             person("Sonia", "Laforest"), person("Pola", "Wojnarowicz"),
+             person(c("Bruce", "P."), "Hollebone"), person("Vanessa", "Beaulac")),
+  journal = "Environmental Pollution",
+  year = "2026",
+  note = "Submitted",
+  textVersion = paste(
+    "Pelletier N., Yang Z., Laforest S., Wojnarowicz P., Hollebone B.P., Beaulac V. (2026).",
+    "Source apportionment of PACs and petroleum biomarkers in British Columbia intertidal",
+    "sediments: an urban-to-remote baseline for spill response. Environmental Pollution",
+    "(submitted)."
+  )
+)

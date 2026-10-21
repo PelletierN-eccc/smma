@@ -34,9 +34,13 @@ results <- lapply(seq_len(nrow(variants)), function(k) {
   bt <- smma_bootstrap(inp, B = cfg$B, seed = cfg$seed, kow = kow, sn = sn,
                        kow_args = cfg$kow_args, keep_draws = TRUE)
   sh <- smma_group_share(bt, is_petro, categories = inp$categories)
-  cbind(magnitude = v$magnitude, capped_profiles_excluded = v$drop_cap,
-        n_sources = ncol(inp$L), sh[sh$group == "Petrogenic", ])
+  ps <- bt$per_source[order(bt$per_source$factor, -bt$per_source$median), ]
+  top <- do.call(rbind, lapply(split(ps, ps$factor), utils::head, 10))
+  list(share = cbind(magnitude = v$magnitude, capped_profiles_excluded = v$drop_cap,
+                     n_sources = ncol(inp$L), sh[sh$group == "Petrogenic", ]),
+       top = cbind(magnitude = v$magnitude, capped_profiles_excluded = v$drop_cap, top))
 })
-res <- do.call(rbind, results)
+res <- do.call(rbind, lapply(results, `[[`, "share"))
 out(res, "biomarker_sensitivity_petrogenic_share.csv")   # Table S12
+out(do.call(rbind, lapply(results, `[[`, "top")), "biomarker_sensitivity_top10_sources.csv")
 print(res)

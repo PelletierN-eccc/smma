@@ -31,8 +31,11 @@ choices are all arguments.
 
 ```r
 # install.packages("remotes")
-remotes::install_git("https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma")
+remotes::install_github("PelletierN-eccc/smma")
 ```
+
+The repository is mirrored on GC Code (Government of Canada):
+<https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma>.
 
 Required: R ≥ 4.1 and the `nnls` package. Optional: `readxl` (Excel input),
 `ggplot2` (plots), `sf` and `nlme` (spatial tools).

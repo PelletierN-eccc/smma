@@ -12,7 +12,7 @@
 #   source("analysis/R/05_smma_direct_samples.R")
 # =========================================================================
 
-library(smma)   # remotes::install_git("https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma")
+library(smma)   # remotes::install_github("PelletierN-eccc/smma")
 
 cfg <- list(
   data_dir   = "analysis/data",

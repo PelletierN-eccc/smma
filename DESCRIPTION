@@ -34,6 +34,7 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-URL: https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma
+URL: https://github.com/PelletierN-eccc/smma, https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma
+BugReports: https://github.com/PelletierN-eccc/smma/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

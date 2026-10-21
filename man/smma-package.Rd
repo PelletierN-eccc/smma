@@ -30,7 +30,9 @@ Supporting tools: \code{\link[=profile_distances]{profile_distances()}}, \code{\
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://github.com/PelletierN-eccc/smma}
   \item \url{https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma}
+  \item Report bugs at \url{https://github.com/PelletierN-eccc/smma/issues}
 }
 
 }

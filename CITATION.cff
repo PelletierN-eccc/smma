@@ -8,7 +8,8 @@ authors:
   - family-names: Pelletier
     given-names: Nicolas
     affiliation: "Environment and Climate Change Canada, Emergency Science and Technology Section"
-repository-code: "https://gccode.ssc-spc.gc.ca/PelletierN-ECCC/smma"
+repository-code: "https://github.com/PelletierN-eccc/smma"
+url: "https://github.com/PelletierN-eccc/smma"
 preferred-citation:
   type: article
   title: "Source apportionment of PACs and petroleum biomarkers in British Columbia intertidal sediments: an urban-to-remote baseline for spill response"

@@ -226,6 +226,25 @@ pS21 <- ggplot(d21, aes(x = .data$value, y = .data$category, fill = .data$method
   labs(x = "Median share of EPA16 burden", y = NULL) +
   theme_pub + theme(legend.position = "bottom") + guides(fill = guide_legend(nrow = 1))
 save_fig(pS21, "Figure_S21_direct_vs_PMF_SMMA", 10)
+# --- Figure S23: petrogenic share across biomarker bounds (Table S12) -----------
+s12 <- read.csv(file.path(cfg$out_dir, "biomarker_sensitivity_petrogenic_share.csv"))
+s12$magnitude <- factor(tools::toTitleCase(s12$magnitude), c("Baseline", "Low", "Central", "High"))
+s12$set <- factor(ifelse(s12$capped_profiles_excluded, "Capped-ratio profiles excluded",
+                         "All profiles"), c("All profiles", "Capped-ratio profiles excluded"))
+pd23 <- position_dodge(width = 0.5)
+pS23 <- ggplot(s12, aes(x = .data$magnitude, y = 100 * .data$median, shape = .data$set)) +
+  geom_errorbar(aes(ymin = 100 * .data$p025, ymax = 100 * .data$p975), position = pd23,
+                width = 0.25, linewidth = 0.35, colour = "grey35") +
+  geom_point(position = pd23, size = 2, fill = "white", colour = "grey10", stroke = 0.5) +
+  facet_wrap(~ factor, nrow = 1) +
+  scale_shape_manual(values = c(21, 24), name = NULL) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = "Biomarker magnitude bound", y = "Petrogenic share (median, 95% CI)") +
+  theme_pub + theme(legend.position = "bottom",
+                    panel.grid.major.y = element_line(colour = "grey90", linewidth = 0.3),
+                    panel.grid.major.x = element_blank())
+save_fig(pS23, "Figure_S23_biomarker_sensitivity", 7.5)
+
 # --- Figure S17: category share versus percent fines (Table S6) -------------------
 s6 <- read.csv(file.path(cfg$out_dir, "share_vs_fines_table_s6.csv"))
 s6$sig <- ifelse(s6$p_value >= 0.05, "Not significant",

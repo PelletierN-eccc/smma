@@ -226,4 +226,21 @@ pS21 <- ggplot(d21, aes(x = .data$value, y = .data$category, fill = .data$method
   labs(x = "Median share of EPA16 burden", y = NULL) +
   theme_pub + theme(legend.position = "bottom") + guides(fill = guide_legend(nrow = 1))
 save_fig(pS21, "Figure_S21_direct_vs_PMF_SMMA", 10)
+# --- Figure S17: category share versus percent fines (Table S6) -------------------
+s6 <- read.csv(file.path(cfg$out_dir, "share_vs_fines_table_s6.csv"))
+s6$sig <- ifelse(s6$p_value >= 0.05, "Not significant",
+                 ifelse(s6$r > 0, "Significant positive", "Significant negative"))
+s6$category <- factor(s6$category, rev(c(family_levels[-8], "All petroleum")))
+pS17 <- ggplot(s6, aes(x = .data$r, y = .data$category, fill = .data$sig)) +
+  geom_col(width = 0.7) +
+  geom_vline(xintercept = 0, linewidth = 0.3, colour = "grey40") +
+  geom_text(aes(label = sprintf("r = %.2f, p = %s", .data$r, signif(.data$p_value, 2)),
+                hjust = ifelse(.data$r > 0, -0.08, 1.08)), size = 2.3, colour = "grey15") +
+  scale_fill_manual(values = c(`Significant positive` = "#0ca30c",
+                               `Significant negative` = "#d03b3b",
+                               `Not significant` = "#b9b8b1"), name = NULL) +
+  scale_x_continuous(limits = c(-0.6, 0.6)) + scale_y_discrete(labels = dash) +
+  labs(x = sprintf("Pearson r, category share (EPA16) vs %% fines (n = %d)", s6$n[1]), y = NULL) +
+  theme_pub + theme(legend.position = "bottom")
+save_fig(pS17, "Figure_S17_share_vs_fines", 7.5)
 cat("Figures written to", fig_dir, "\n")
